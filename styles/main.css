@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
+
+/* General */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: white;
+    font-family: "Jost", sans-serif;
+}
+
+/* Начальная навигационная панель типа */
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 102px;
+}
+
+.title,
+.links,
+.button {
+    margin: 0;
+}
+
+.container,
+.div-links {
+    display: flex;
+}
+
+/* Стилизация элементов */
+.title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50.58px;
+
+    color: #000;
+
+    max-width: 228px;
+    max-height: 51px;
+}
+
+.links {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 36.13px;
+
+    color: #000;
+
+    max-width: 93px;
+    max-height: 36px;
+
+    margin-left: 39px;
+}
+
+.button {
+    font-family: "Jost", sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 33.24px;
+
+    color: #fff;
+    background-color: #8c9fe3;
+
+    max-width: 284px;
+    max-height: 50px;
+
+    padding: 8.5px 9px;
+
+    border-radius: 10px;
+
+    border: none;
+}
+
+
+/* Еще чуть отступы для элементов */
+.div-title {
+    margin-top: 33px;
+    margin-right: 76px;
+}
+
+.div-links {
+    margin-top: 40px;
+}
+
+.div-button {
+    margin-top: 31px;
+    margin-left: 133px;
+}
+
+/* Картинка */
+.intro-picture {
+    display: block;
+    max-width: 1031px;
+    max-height: 521px;
+    margin: auto;
+    /* Чтобы картина была посередине */
+
+    margin-top: 88px;
+
+    border-radius: 50px;
+}
+
+/* Товары магазина */
+/* Решил пойти по порядку: */
+/* В итоговом варианте здесь будет так, */
+/* Типа я сперва один элемент полностью доделывал, */
+/* А потом следующий */
+/* Но я буду все элементы стилизовать, */
+/* А потом их отступы, их позиции писать */
+
+.goods-heading,
+.goods-sentence,
+.electronics-name,
+.electronics-description,
+.electronics-current-price,
+.electronics-old-price,
+.electronics-button {
+    margin: 0;
+}
+
+.section {
+    /*  */
+}
+
+.store-goods {
+    /*  */
+}
+
+.div-goods-heading {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 96px;
+}
+
+.goods-heading {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50.58px;
+
+    color: #000;
+
+    max-width: 558px;
+    max-height: 51px;
+}
+
+.div-goods-sentence {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 7px;
+}
+
+.goods-sentence {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 40.46px;
+
+    color: #000;
+
+    max-width: 467px;
+    max-height: 40px;
+}
+
+.div-all-three-electronics {
+    display: flex;
+    justify-content: center;
+    gap: 78px;
+    /* чтобы три электроники стояли посередине и с пробелом в 78px */
+
+    margin-top: 49px;
+}
+
+
+
+/* Общиие характеристики */
+.div-electronics {
+    width: 360px;
+    height: 400px;
+
+    border: 1px solid #a5a5a5;
+    border-radius: 50px;
+
+    padding: 30px 36px 36px 23px;
+
+}
+
+.div-electronics-image {
+    margin-bottom: 12px;
+}
+
+.electronics-image {
+    max-width: 288px;
+    max-height: 145px;
+    border-radius: 20px;
+
+    display: block;
+    margin: auto;
+}
+
+.div-electronics-name {
+    margin-bottom: 4px;
+}
+
+.electronics-name {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 37.57px;
+
+    color: #000;
+
+    max-width: 210px;
+    max-height: 38px;
+
+    margin: auto;
+}
+
+.div-electronics-description {
+    margin-bottom: 10px;
+}
+
+.electronics-description {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28.9px;
+    text-align: center;
+
+    color: #636363;
+
+    max-width: 248px;
+    max-height: 58px;
+
+    margin: auto;
+}
+
+.div-electronics-price {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 7px;
+}
+
+.div-electronics-current-price {
+    margin-right: 19px;
+}
+
+.electronics-current-price {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 37.57px;
+
+    color: #3e68ff;
+
+    max-width: 84px;
+    max-height: 38px;
+}
+
+.div-electronics-old-price {
+    /*  */
+}
+
+.electronics-old-price {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 37.57px;
+
+    color: #282828;
+
+    max-width: 81px;
+    max-height: 38px;
+
+    text-decoration: line-through;
+}
+
+.div-electronics-button {
+    display: flex;
+    justify-content: center;
+}
+
+.electronics-button {
+    font-family: "Jost", sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30.35px;
+
+    color: #fff;
+    background-color: #9eb4ff;
+
+    max-width: 210px;
+    max-height: 35px;
+
+    padding: 2.5px 65.5px;
+
+    border-radius: 10px;
+
+    border: none;
+}
+
+
+
+/* Характеристики только для планшета */
+.tablet-name {
+    max-width: 208px;
+}
+
+.tablet-description {
+    max-width: 304px;
+}
+
+.tablet-cur-price {
+    max-width: 88px;
+}
+
+.div-tablet-cur-price {
+    margin-right: 15px;
+}
+
+
+
+/* Характеристики только для ноутбука */
+.laptop-name {
+    max-width: 239px;
+}
+
+.laptop-cur-price {
+    max-width: 87px;
+}
+
+.div-laptop-cur-price {
+    margin-right: 16px;
+}
+
+
+
+/* Отзывы покупателей */
+
+.reviews-heading,
+.customer-name,
+.customer-profession,
+.comment {
+    margin: 0;
+}
+
+.customer-reviews {
+    /*  */
+}
+
+.div-customer-reviews {
+    /*  */
+}
+
+.div-reviews-heading {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 96px;
+}
+
+.reviews-heading {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50.58px;
+
+    color: #000;
+
+    max-width: 342px;
+    max-height: 51px;
+}
+
+.div-customer-image {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 22px;
+}
+
+.customer-image {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.div-customer-name {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 12px;
+}
+
+.customer-name {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34.68px;
+
+    color: #000;
+
+    max-width: 216px;
+    max-height: 35px;
+}
+
+.div-customer-profession {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 0;
+}
+
+.customer-profession {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 28.9px;
+
+    color: #545454;
+
+    max-width: 91px;
+    max-height: 29px;
+}
+
+.div-customer-comment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    /* чтобы левая, правая иконка и коммент
+    в линию стояли и посередине и с пробелом в 60px */
+
+    margin-top: 12px;
+}
+
+.div-left-icon-image {
+    /*  */
+}
+
+.left-icon-image {
+    width: 90px;
+    height: 90px;
+}
+
+.div-comment {
+    /*  */
+}
+
+.comment {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34.68px;
+
+    color: #000;
+
+    max-width: 1015px;
+    max-height: 175px;
+}
+
+.div-right-icon-image {
+    /*  */
+}
+
+.right-icon-image {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.div-page-turning-icon-image {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 31px;
+}
+
+.page-turning-icon-image {
+    width: 92px;
+    height: 7px;
+}
+
+
+
+/* Блок "Остались вопросы?" */
+
+.question-block-heading,
+.question-block-sentence {
+    margin: 0;
+}
+
+.questions-block {
+    /*  */
+}
+
+.div-question-block {
+    /*  */
+}
+
+.div-question-block-heading {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 96px;
+}
+
+.question-block-heading {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50.58px;
+
+    color: #000;
+
+    max-width: 325px;
+    max-height: 51px;
+}
+
+.div-question-block-sentence {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 7px;
+}
+
+.question-block-sentence {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 40.46px;
+
+    color: #000;
+
+    max-width: 271px;
+    max-height: 40px;
+}
+
+.div-form-block {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 45px;
+}
+
+.form {
+    width: 700px;
+    height: 400px;
+
+    border-radius: 50px;    
+    border: 1px solid #adadad;
+}
+
+.div-form-name {
+    margin-top: 27px;
+}
+
+.form-text-input {
+    font-family: Jost, sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 40.46px;
+
+    color: #222;
+    background-color: #fff;
+
+    width: 585px;
+    height: 64px;
+
+    border-radius: 30px;
+    border: 1px solid #bababa;
+
+    display: block;
+    margin: auto;
+
+    padding-left: 30px;
+}
+
+.div-form-email {
+    margin-top: 26px;
+}
+
+.div-form-complication {
+    margin-top: 26px;
+}
+
+.div-form-button {
+    margin-top: 47px;
+}
+
+.form-button {
+    font-family: Jost, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 30.35px;
+
+    color: #fff;
+    background-color: #9eb4ff;
+
+    width: 210px;
+    height: 35px;
+
+    border-radius: 10px;
+    border: none;
+
+    display: block;
+    margin: auto;
+}
+
+
+
+/* Контакты */
+
+.contacts-block-heading,
+.contacts-block-sentence,
+.contacts-block-title,
+.contacts-block-links {
+    margin: 0;
+}
+
+.contacts-block {
+    /*  */
+}
+
+.div-contacts-block {
+    /*  */
+}
+
+.div-contacts-block-heading {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 96px;
+}
+
+.contacts-block-heading {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50.58px;
+
+    color: #000;
+
+    max-width: 148px;
+    max-height: 51px;
+}
+
+.div-contacts-block-sentence {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 7px;
+}
+
+.contacts-block-sentence {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 40.46px;
+
+    color: #000;
+
+    max-height: 473px;
+    max-height: 40px;
+}
+
+.div-contacts-block-image {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 57px;
+}
+
+.map-image {
+    max-width: 1440px;
+    max-height: 373.5px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+
+    width: 1440px;
+    height: 227px;
+
+    margin: auto;
+}
+
+.div-contacts-block-title {
+    margin-left: 122px;
+}
+
+.contacts-block-title {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50.58px;
+
+    color: #000;
+
+    max-width: 228px;
+    max-height: 51px;
+}
+
+.div-contacts-block-links {
+    margin-left: 133px;
+}
+
+.contacts-block-links {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 36.13px;
+
+    color: #000;
+
+    max-width: 131px;
+    max-height: 36px;
+
+    margin-bottom: 10px;
+}
+
+.contacts-block-links:last-child {
+    margin-bottom: 0;
+    /* чтобы у последнего не было отступа вниз, это чуть влияет на результат */
+}
+
+.div-contacts-block-contacts {
+    margin-left: 161px;
+}
+
+.contacts-block-contacts {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36.13px;
+
+    color: #3e68ff;
+
+    max-width: 211px;
+    max-height: 36px;
+
+    display: block;
+
+    text-decoration: none;
+}
+
+.div-telegram-image {
+    margin-left: 129px;
+}
+
+.telegram-image {
+    width: 100px;
+    height: 100px;
+}
+
+.div-email-image {
+    /*  */
+}
+
+.email-image {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* в html у меня там где ноутбук
+телефон и планшет, некоторые классы 
+у этих элементов совпадают и всего лишь
+один класс, а для некоторых - для тех которым 
+нужны изменения в соответствии с фигмой, 
+я сделаю еще дополнительные классы, и 
+напишу туда измененные параметры */
+
+/* ГЕНИАЛЬНО */
